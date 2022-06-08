@@ -18,7 +18,7 @@ body{
         animation: backgroundTransition 8s ease-in-out infinite;
 }
 h1{
-    margin-top: 25rem;
+    margin-top: 1rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     
@@ -310,8 +310,60 @@ color: rgb(109, 109, 109);
   opacity: 1;
   visibility: visible;
   font-size: 14px;
+  background-color: gray;
   
   
   
   }
+  /*FOOTER*/
+
+  .footer {
+
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+  }
+  
+  /*RESPONSIVO*/
+
+  @media (max-width:800px) {
+.social-media{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 0;
+}  
+.card-container {
+    flex-direction: column;
+
+}
+.container .card-container:nth-child(1),
+.card-container:nth-child(3){
+    flex-direction: column-reverse;
+}
+.card {
+height: 350px;
+width: 350px;
+
+}
+.card-text{
+    width: 90%;
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+
+}
+.card:hover > .card-wrapper::before {
+    height: 300px;
+    width: 300px;
+}
+
+}
+
   
